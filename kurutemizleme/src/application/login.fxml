@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.loginController">
+   <children>
+      <Button fx:id="btn_giriş" layoutX="138.0" layoutY="266.0" mnemonicParsing="false" onAction="#giriş_clk" prefHeight="30.0" prefWidth="75.0" style="-fx-wrap-text: white;" text="GİRİŞ" />
+        <TextField fx:id="text_kul_adı" layoutX="175.0" layoutY="132.0" prefHeight="35.0" prefWidth="150.0" promptText="Kullanıcı adı" />
+      <TextField fx:id="text_şifre" layoutX="175.0" layoutY="192.0" prefHeight="35.0" prefWidth="150.0" promptText="şifre" />
+      <AnchorPane prefHeight="500.0" prefWidth="50.0" style="-fx-background-color: blue;" />
+      <AnchorPane layoutX="450.0" prefHeight="500.0" prefWidth="50.0" style="-fx-background-color: blue;" />
+      <AnchorPane layoutX="50.0" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: red;" />
+      <AnchorPane layoutX="50.0" layoutY="450.0" prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: red;" />
+      <Label layoutX="205.0" layoutY="66.0" prefHeight="35.0" prefWidth="91.0" style="-fx-background-color: white;" text="GİRİŞ" textFill="#170000">
+         <font>
+            <Font name="Lucida Console" size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

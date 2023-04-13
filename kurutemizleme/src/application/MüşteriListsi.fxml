@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MüşteriListesiController">
+   <children>
+      <TableView fx:id="table_view" layoutY="-26.0" onMouseClicked="#table_view_clk" prefHeight="345.0" prefWidth="300.0" AnchorPane.bottomAnchor="149.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-26.0">
+        <columns>
+          <TableColumn fx:id="table_madı" prefWidth="75.0" text="M_adı" />
+          <TableColumn fx:id="table_msoyad" prefWidth="75.0" text="Soy adı" />
+            <TableColumn fx:id="table_mtel" prefWidth="75.0" text="M_tel" />
+            <TableColumn fx:id="table_adres" prefWidth="75.0" text="Adres" />
+        </columns>
+      </TableView>
+      <TextField fx:id="text_ad" layoutX="22.0" layoutY="362.0" promptText="Müşteri adı" />
+      <TextField fx:id="text_soyad" layoutX="22.0" layoutY="393.0" promptText="müşteri soyadı" />
+      <Button fx:id="btn_ara" layoutX="209.0" layoutY="406.0" mnemonicParsing="false" onAction="#ara_clk" prefHeight="25.0" prefWidth="52.0" text="Ara" />
+      <Button fx:id="btn_güncelle" layoutX="211.0" layoutY="449.0" mnemonicParsing="false" onAction="#güncelle_clk" text="güncelle" />
+      <Button fx:id="btn_sil" layoutX="228.0" layoutY="362.0" mnemonicParsing="false" onAction="#sil_clk" text="sil" />
+      <TextField fx:id="text_tel" layoutX="22.0" layoutY="424.0" promptText="Telefon" />
+      <TextField fx:id="text_adres" layoutX="22.0" layoutY="456.0" promptText="Adres" />
+   </children>
+</AnchorPane>
